@@ -1,0 +1,34 @@
+<!--
+ Copyright (c) 2018 ml5
+ 
+ This software is released under the MIT License.
+ https://opensource.org/licenses/MIT
+-->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shaking Things up with Facemesh</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Require mediapipe facemesh, drawing, and camera utilities. -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <video class="input_video"></video>
+      <canvas id="video_frames" width="1280px" height="720px"></canvas>
+      <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+      <div class="landmark-grid-container"></div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
